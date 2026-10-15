@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juan M. Morelli – Federal Reserve Bank of New York</title>
+<meta name="description" content="Juan M. Morelli is a Research Economist at the Federal Reserve Bank of New York working on macro-finance, international macroeconomics, and banking.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Juan M. Morelli">
+<meta property="og:description" content="Research Economist, Federal Reserve Bank of New York. Macro-finance, international macroeconomics, and banking.">
+<meta property="og:image" content="https://jmorelli88.github.io/headshot.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231D5C4F'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3EJM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #1b1f24;
+    --muted: #59626c;
+    --rule: #e2e5e8;
+    --accent: #1d5c4f;
+    --accent-soft: #e8f0ee;
+    --serif: "Merriweather", Georgia, "Times New Roman", serif;
+    --sans: "Public Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+    --venue-col: 11.5rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15191c;
+      --ink: #e6e8ea;
+      --muted: #9aa3ac;
+      --rule: #2a3035;
+      --accent: #7cc2b0;
+      --accent-soft: #1d2a27;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 0.18em; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .page {
+    max-width: 58rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* Header */
+  header.intro {
+    display: grid;
+    grid-template-columns: var(--venue-col) 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 4.5rem 0 3rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .photo {
+    width: 100%;
+    max-width: var(--venue-col);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    background: var(--accent-soft);
+    display: block;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2.1rem, 5vw, 3rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.5rem;
+  }
+  .role {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0 0 1rem;
+  }
+  .bio {
+    color: var(--muted);
+    max-width: 38rem;
+    margin: 0 0 1.25rem;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 500;
+  }
+  .emails {
+    margin: 0.75rem 0 0;
+    font-size: 0.9375rem;
+    color: var(--muted);
+  }
+  .emails a { color: var(--muted); }
+
+  /* Sections */
+  section { padding: 2.25rem 0 0.25rem; }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 1.375rem;
+    margin: 0 0 1.75rem;
+  }
+
+  /* Paper entries: venue/status in the left column, the paper on the right */
+  .entry {
+    display: grid;
+    grid-template-columns: var(--venue-col) 1fr;
+    gap: 2rem;
+    padding: 0 0 2rem;
+  }
+  .venue {
+    font-size: 0.9375rem;
+    color: var(--muted);
+    line-height: 1.45;
+    padding-top: 0.2rem;
+  }
+  .venue strong {
+    display: block;
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .venue em { font-style: italic; }
+  h3 {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin: 0 0 0.25rem;
+  }
+  .authors, .cite {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 1.25rem;
+    margin: 0.5rem 0 0;
+    font-size: 0.9375rem;
+    font-weight: 500;
+  }
+  .media {
+    margin: 0.35rem 0 0;
+    font-size: 0.9375rem;
+    color: var(--muted);
+  }
+
+  details { margin-top: 0.5rem; }
+  summary {
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--accent);
+    font-size: 0.9375rem;
+    font-weight: 500;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(-45deg);
+    transition: transform 0.15s ease;
+  }
+  details[open] summary::before { transform: rotate(45deg); }
+  details p {
+    max-width: 40rem;
+    margin: 0.6rem 0 0;
+    padding-left: 0.9rem;
+    border-left: 2px solid var(--accent-soft);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+
+  footer {
+    margin-top: 2.5rem;
+    padding: 2rem 0 3rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.8125rem;
+    color: var(--muted);
+  }
+  footer p { margin: 0 0 0.5rem; max-width: 44rem; }
+
+  @media (max-width: 680px) {
+    .page { padding: 0 1rem; }
+    header.intro {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      padding: 2.5rem 0 2rem;
+    }
+    .photo { max-width: 7.5rem; }
+    .entry { grid-template-columns: 1fr; gap: 0.35rem; }
+    .venue strong { display: inline; }
+    .venue strong::after { content: " "; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    summary::before { transition: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="intro">
+    <img class="photo" src="headshot.jpg" alt="Juan M. Morelli" width="184" height="184"
+         onerror="this.style.visibility='hidden'">
+    <div>
+      <h1>Juan M. Morelli</h1>
+      <p class="role">Research Economist, Federal Reserve Bank of New York</p>
+      <p class="bio">I work on macro-finance, international macroeconomics, and banking. I received my PhD in Economics from NYU Stern in 2020.</p>
+      <ul class="contact">
+        <li><a href="https://drive.google.com/file/d/10FqQOkx15F5l6SKm67C_excgwY_x2w83/view">CV</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#policy">Policy notes</a></li>
+        <li><a href="https://authors.repec.org/pro/pmo1344/">RePEc</a></li>
+        <li><a href="https://www.newyorkfed.org/research/economists/Morelli">NY Fed profile</a></li>
+      </ul>
+      <p class="emails"><a href="mailto:juan.morelli@ny.frb.org">juan.morelli@ny.frb.org</a><br><a href="mailto:juanmorelli@gmail.com">juanmorelli@gmail.com</a></p>
+    </div>
+  </header>
+
+  <main id="research">
+
+    <section aria-labelledby="pubs">
+      <h2 id="pubs">Publications</h2>
+
+      <article class="entry">
+        <div class="venue"><strong><em>Econometrica</em></strong>2022</div>
+        <div>
+          <h3>Global Banks and Systemic Debt Crises</h3>
+          <p class="authors">with <a href="https://sites.google.com/site/ottonellopablo/">Pablo Ottonello</a> and <a href="http://www.perezdiego.org/">Diego Perez</a></p>
+          <p class="cite">Vol. 90, No. 2, 749–798</p>
+          <div class="links">
+            <a href="https://www.econometricsociety.org/publications/econometrica/2022/03/01/global-banks-and-systemic-debt-crises">Journal</a>
+            <a href="https://drive.google.com/file/d/1eNTqr6VhUeMNvpWP8y7HzaXcbER1LPIk/view">Paper</a>
+          </div>
+          <details>
+            <summary>Abstract</summary>
+            <p>We study the role of financial intermediaries in the global market for risky external debt. We first provide empirical evidence measuring the effect of global banks' net worth on bond prices of emerging-market economies. We show that, around Lehman Brothers' collapse, within emerging-market bonds with similar risk, those held by more distressed global banks experienced larger price contractions. We then construct a model of global banks' lending to emerging economies and quantify their role using our empirical estimates and other key data. In the model, banks' net worths affect bond prices by the combination of a form of market segmentation and banks' financial frictions. We show that these banks' exposure to emerging economies significantly determines their role in propagating shocks. With the current observed exposure, global banks play an important role in transmitting shocks originating in developed economies, accounting for the bulk of the variation of spreads in emerging economies during the recent global financial crisis. Global banks help explain key patterns of debt prices observed in the data, and the evolution of their exposure over recent decades can explain the changing nature of systemic debt crises in emerging economies.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="venue"><strong><em>Journal of Political Economy</em></strong>2023</div>
+        <div>
+          <h3>Information Frictions, Reputation and Sovereign Spreads</h3>
+          <p class="authors">with <a href="https://sites.google.com/nyu.edu/mmoretti/home">Matías Moretti</a></p>
+          <p class="cite">Vol. 131, No. 11, 3066–3102</p>
+          <div class="links">
+            <a href="https://doi.org/10.1086/724855">Journal</a>
+            <a href="https://drive.google.com/file/d/1o_zgY_BtMdvBElWnjt-7yRoF-gdUZSS9/view">Paper</a>
+          </div>
+          <details>
+            <summary>Abstract</summary>
+            <p>We formulate a reputational model in which the type of government is time varying and private information. Agents adjust their beliefs about the government's type (i.e., reputation) using noisy signals about its policies. We consider a debt repayment setting in which reputation influences the market's perceived probability of default, which affects sovereign spreads. We focus on the 2007–2012 Argentine episode of inflation misreport to quantify how markets price reputation. We find that the misreports significantly increased Argentina's sovereign spreads. We use those estimates to discipline our model and show that reputation can have long-lasting effects on a government's borrowing costs.</p>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="wps">
+      <h2 id="wps">Working papers</h2>
+
+      <article class="entry">
+        <div class="venue"><strong>Revise and resubmit</strong><em>International Economic Review</em></div>
+        <div>
+          <h3>Macroeconomic and Monetary Policy Implications of Limited Participation</h3>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1fMDsaUKjYc7yQLDR9fRC9hhQ484gfhYL/view">Paper</a>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4823480">SSRN</a>
+          </div>
+          <p class="media">Coverage: <a href="https://www.ft.com/content/ed41bea0-4b8d-47dc-9989-018bd85e52fd">Financial Times</a>, <a href="https://libertystreeteconomics.newyorkfed.org/2026/08/has-broader-stock-market-participation-changed-how-interest-rates-affect-the-economy/">Liberty Street Economics</a></p>
+          <details>
+            <summary>Abstract</summary>
+            <p>This paper studies how the rise in US households' participation in equity markets affects the transmission of macroeconomic shocks to the economy. I embed limited participation into a New Keynesian framework to analyze the individual and aggregate effects of higher participation. In the model, participants are more responsive to shocks than nonparticipants by having higher exposure to aggregate risk. However, higher participation reduces the exposure of the individual participant, thus lowering her consumption volatility. This translates into milder fluctuations in investment and asset prices. Model predictions are aligned with new micro-level evidence on the response of consumption to monetary shocks.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="venue"><strong>Submitted</strong></div>
+        <div>
+          <h3>Geographical Funding Risk and Market Power in Deposit Markets</h3>
+          <p class="authors">with <a href="https://sites.google.com/nyu.edu/mmoretti/home">Matías Moretti</a> and <a href="https://sites.google.com/site/vvenkate/">Venky Venkateswaran</a></p>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1RhxALDNblOto1GvQY0xBXkMK5PCfzG3H/view">Paper</a>
+          </div>
+          <details>
+            <summary>Abstract</summary>
+            <p>We develop a rich yet flexible spatial banking model to study how diversification and competition shape U.S. deposit markets. Deposit rates reflect both markups and risk premia from undiversified geographic risk. Calibrated to micro data, the model reveals sizable risk premia, especially in small, poor counties, and shows that recent banking consolidation has reduced these premia. In contrast, markups changed only modestly, so depositors in less diversified areas benefited the most. Further consolidation, e.g. acquisitions of small banks by large regional ones, would lower risk premia but reduce local lending, as larger banks reallocate credit toward more profitable markets.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="venue"><strong>Working paper</strong></div>
+        <div>
+          <h3>Credit Card Market Power</h3>
+          <p class="authors">with <a href="https://sites.google.com/site/kyleherkenhoff/">Kyle Herkenhoff</a></p>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1ucNqGCrWSA1_DyYhTa2jKaxMPezfHdUs/view">Paper</a>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4859945">SSRN</a>
+          </div>
+          <details>
+            <summary>Abstract</summary>
+            <p>How do large, national credit card lenders affect interest rates, the size of the credit card market, and household welfare? We answer this question by developing a novel theory in which national lenders strategically influence market-level and economy-wide interest rates. Our theory predicts that pass-through rates from bank funding costs to credit card spreads depend on market- and national-level shares, unlike perfect or monopolistic competition. These predictions are borne out in bank regulatory data: pass-through rates are 10% lower in markets where a bank is large (top 30% share) compared to all other markets in which the bank operates. We find similar results for banks with large national shares, and our results are robust to the exclusion of geography in the market definition. We then use these moments to discipline market power in our model and measure its costs. Moving from national oligopoly to perfect competition reduces credit card interest rates by 2pp, increases credit-to-GDP by 3.6pp, and yields a consumption equivalent gain between 0.03% and 0.15%.</p>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="wip">
+      <h2 id="wip">Work in progress</h2>
+
+      <article class="entry">
+        <div class="venue"><strong>In progress</strong></div>
+        <div>
+          <h3>Distributional Effects in Sovereign Debt Policy</h3>
+          <p class="authors">with <a href="https://sites.google.com/nyu.edu/froldan">Francisco Roldán</a></p>
+          <details>
+            <summary>Abstract</summary>
+            <p>We study distributional incentives for domestic sovereign debt policies. We have access to a large survey conducted by the Bank of Spain which provides detailed balance sheet information for Spanish households for the 2000s. We characterize the distribution of domestic holdings of sovereign debt, and construct indirect holdings using information on holdings of pension and investment funds. In this paper, we ask whether inequality in debt holdings has an impact on Spanish spreads. To address this question, we build a heterogeneous agents model with defaultable domestic debt. In the model, debt optimality entails a trade-off between the benefits of better insurance against a higher level of inequality. Furthermore, in more unequal times the government is less likely to undergo regressive adjustment plans aimed at cutting spending. Thus, the model implies that the government's incentives to issue and repay debt are affected by the distribution of wealth. This is especially relevant in crisis times since they involve significant movements in the dispersion of the distribution.</p>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <section id="policy" aria-labelledby="policy-h">
+      <h2 id="policy-h">Policy notes</h2>
+
+      <article class="entry">
+        <div class="venue"><strong>FEDS Notes</strong>August 2025</div>
+        <div>
+          <h3>What Do Bank Stock Returns Say About Monetary Policy Transmission?</h3>
+          <p class="authors">with Paige Ehresmann and <a href="https://jiaxuwang.com">Jessie Wang</a></p>
+          <div class="links">
+            <a href="https://www.federalreserve.gov/econres/notes/feds-notes/what-do-bank-stock-returns-say-about-monetary-policy-transmission-20250804.html">Read note</a>
+          </div>
+          <details>
+            <summary>Summary</summary>
+            <p>In this FEDS note, we quantify the heterogeneous effects of monetary policy (MP) in the banking sector using a factor-based asset pricing model. We find that MP shocks shift risk factors that price bank stocks and that the transmission varies with bank characteristics such as size, leverage, wholesale funding, and ratio of uninsured deposits. Notably, we show that the greater sensitivity of larger banks to MP shocks is primarily transmitted through the market risk factor.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="venue"><strong>FEDS Notes</strong>June 2025</div>
+        <div>
+          <h3>Modeling Bank Stock Returns: A Factor-Based Approach</h3>
+          <p class="authors">with Paige Ehresmann and <a href="https://jiaxuwang.com">Jessie Wang</a></p>
+          <div class="links">
+            <a href="https://www.federalreserve.gov/econres/notes/feds-notes/modeling-bank-stock-returns-a-factor-based-approach-20250606.html">Read note</a>
+          </div>
+          <details>
+            <summary>Summary</summary>
+            <p>We introduce a factor asset pricing model to analyze risk-adjusted returns on bank stocks. Our model includes five established pricing factors in the literature. We illustrate the model's usefulness in two applications: first, for daily analysis of bank stock return drivers between policy events like FOMC meetings. Second, for detecting the propagation of banking-sector shocks, focusing on market reactions to news about NYCB in early 2024 and contrasting them with responses during the collapse of SVB in early 2023.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="venue"><strong>FEDS Notes</strong></div>
+        <div>
+          <h3>Measuring Bank Credit Supply Shocks Using the Senior Loan Officer Survey</h3>
+          <p class="authors">with Michele Cavallo, Rebecca Zarutskie, and Solveig Baylor</p>
+          <div class="links">
+            <a href="https://doi.org/10.17016/2380-7172.3516">Read note</a>
+          </div>
+          <details>
+            <summary>Summary</summary>
+            <p>Estimating the effects that bank credit supply has on macroeconomic activity has long been an area of active research. A key challenge in pursuing this goal is the ability to measure such shocks to banks' supply of credit separately from shocks to borrowers' demand for credit. In this note, we present a measure of credit supply shocks that exploits bank-level responses to the Federal Reserve's Senior Loan Officer Opinion Survey on Bank Lending Practices (SLOOS) applying a variation of the methodology introduced by Bassett et al. (2014), which consists of purging banks' responses regarding changes in lending standards from the influence of macroeconomic, financial, and bank-specific factors.</p>
+          </details>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="venue"><strong>FEDS Notes</strong></div>
+        <div>
+          <h3>Unpacking the Effects of Bank Credit Supply Shocks on Economic Activity</h3>
+          <p class="authors">with Michele Cavallo and Rebecca Zarutskie</p>
+          <div class="links">
+            <a href="https://doi.org/10.17016/2380-7172.3517">Read note</a>
+          </div>
+          <details>
+            <summary>Summary</summary>
+            <p>In this note, we examine the effects of bank credit supply shocks on real economic activity. First, we estimate how GDP and various aggregate demand sectors respond to such shocks. Second, based on the estimated responses, we compute how much those sectors contribute to the overall response of aggregate demand to bank credit supply shocks. We find that these shocks affect aggregate demand disproportionately through personal consumption expenditures on durable goods, nonresidential investment in equipment, and residential investment. We also find that measuring bank credit supply shocks through individual loan categories and estimating their effects on the corresponding aggregate demand sectors does not allow us to account for the overall estimated response of aggregate demand growth. This result suggests the presence of meaningful linkages at work across the various lending categories in the propagation of bank credit supply shocks.</p>
+          </details>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>The views expressed here are my own and should not be interpreted as reflecting the views of the Federal Reserve Bank of New York or of anyone else associated with the Federal Reserve System.</p>
+    <p>Last updated October 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>

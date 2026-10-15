@@ -224,6 +224,18 @@
     color: var(--muted);
   }
   footer p { margin: 0 0 0.5rem; max-width: 44rem; }
+  .closing { margin: 2rem 0 0; }
+  .closing img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .closing figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--muted);
+  }
 
   @media (max-width: 680px) {
     .page { padding: 0 1rem; }
@@ -441,6 +453,10 @@
   <footer>
     <p>The views expressed here are my own and should not be interpreted as reflecting the views of the Federal Reserve Bank of New York or of anyone else associated with the Federal Reserve System.</p>
     <p>Last updated October 2026</p>
+    <figure class="closing">
+      <img src="alaska.jpg" alt="Juan Morelli in front of a glacier on the Kenai Peninsula, Alaska" width="1600" height="660" loading="lazy">
+      <figcaption>Kenai Peninsula, Alaska</figcaption>
+    </figure>
   </footer>
 
 </div>
